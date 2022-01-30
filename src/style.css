@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Heebo:wght@100;200;300;400;500&family=Inter:wght@100;200;300;400&family=Lato:wght@100;700&family=PT+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Teko:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Heebo:wght@100;200;300;400;500&family=Inter:wght@100;200;300;400&family=Lato:wght@100;700&family=PT+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Teko:wght@300;400;500&display=swap");
 
 *,
 *::after,
@@ -10,13 +10,13 @@
 
 body {
   color: #fff;
-  background-image: linear-gradient(to right bottom, #be915a9c, #ffffff09),
-    url('./assets/main.jpg');
-  height: 100%;
+  background-image:
+    linear-gradient(to right bottom, #be915a9c, #ffffff09),
+    url("./assets/main.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   text-align: center;
   padding-top: 8vh;
   height: 100vh;
