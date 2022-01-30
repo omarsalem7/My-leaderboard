@@ -1,14 +1,24 @@
-import _ from 'lodash';
 import './style.css';
+import { setScores, getScores } from './modules/api';
+import renderScores from './modules/renderScores';
 
-function component() {
-  const element = document.createElement('div');
+window.onload = async () => {
+  renderScores(await getScores());
+};
+const refreshBtn = document.querySelector('.refresh button');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'ahmed'], ' ');
-  element.classList.add('hello');
+refreshBtn.addEventListener('click', async () => {
+  const list = await getScores();
+  renderScores(list);
+});
 
-  return element;
-}
-
-document.body.appendChild(component());
+const form = document.querySelector('form');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const newScore = {
+    user: document.querySelectorAll('input')[0].value.trim(),
+    score: document.querySelectorAll('input')[1].value.trim(),
+  };
+  form.reset();
+  await setScores(newScore);
+});
