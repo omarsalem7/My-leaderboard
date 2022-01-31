@@ -31,6 +31,8 @@ body {
 .scores ul {
   border: 2px solid #000;
   margin-top: 20px;
+  max-height: 350px;
+  overflow-y: scroll;
 }
 
 .scores ul li {
