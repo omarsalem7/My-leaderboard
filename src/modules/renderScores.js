@@ -9,8 +9,9 @@ const renderScores = (list) => {
 
   list
     .sort((a, b) => b.score - a.score)
-    .forEach((score) => {
-      container.innerHTML += ` <li>${score.user} : ${score.score}</li>`;
+    .forEach((score, index) => {
+      const topScores = index < 3 ? '<i class="fas fa-crown"></i' : '';
+      container.innerHTML += ` <li><span>${score.user} : ${score.score}</span> ${topScores}</li>`;
     });
 };
 
