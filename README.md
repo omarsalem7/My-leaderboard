@@ -1,13 +1,28 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Templte
+# Scores Leadboard
 
-Additional description about the project and its features.
+This is a leaderboard app to displays scores submitted by different players, It is used API to get data and post new score.
+
+![screenshot](./game.png)
+
+## Built using
+
+- HTML
+- CSS
+- JavaScript
+- Webpack
+
 
 ## Getting Started
 
-after cloneing
+after cloning
+```
+git clone https://github.com/omarsalem7/My-leaderboard.git
+cd My-leaderboard
 
+```
+After That
 ```
 npm install
 npm start
@@ -27,6 +42,3 @@ npm start
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
-
-Thanks [Ahmed](https://github.com/ahmedtaa) for this great idea.
