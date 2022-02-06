@@ -20,6 +20,5 @@ export const setScores = async (data) => {
     },
   );
   const { result } = await response.json();
-
   return result;
 };

@@ -20,5 +20,5 @@ form.addEventListener('submit', async (e) => {
     score: document.querySelectorAll('input')[1].value.trim(),
   };
   form.reset();
-  await setScores(newScore);
+  setScores(newScore);
 });
